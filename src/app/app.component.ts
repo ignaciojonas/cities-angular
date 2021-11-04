@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cities';
+  cities = ['New York', 'Gardey', 'Tandil', "Blue York City"];
+  inputCity : string = "";
+
+  add(city:string) {
+    this.cities.push(city);
+  }
+
+  delete() {
+    this.cities.pop();
+  }
 }
